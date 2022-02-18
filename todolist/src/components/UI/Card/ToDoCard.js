@@ -5,12 +5,11 @@ import TodoButton from "../Button/TodoButton";
 const ToDoCard = (props) => {
     return <Card className={classes.cardscreen}>
             <Card.Body>
-                <Card.Title>{props.card.title}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{props.card.subtitle}</Card.Subtitle>
                 <Card.Text>
-                    {props.card.text}
+                    <p> {props.card.title} </p>
                 </Card.Text>
-                <TodoButton  as={"input"} type={"button"} title={"Edit"}  />
+                <TodoButton type={"submit"} value={"Submit"} />
             </Card.Body>
     </Card>
 }

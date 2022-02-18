@@ -5,7 +5,9 @@ import Card from './components/UI/Card/Card'
 import TodoForm from "./components/Todo/TodoForm";
 
 function App() {
-    let c = {}
+    let  todoList = [
+        {title: "Apply graduate School", subtitle:"the subtitle"}
+    ]
 
   return (
     <div className="App">
@@ -13,7 +15,7 @@ function App() {
         <Card title={"Enter todo item"}>
             <TodoForm />
         </Card>
-        {/*<ToDoCard card={c}/>*/}
+        <ToDoCard card={todoList[0]}/>
     </div>
   );
 }
