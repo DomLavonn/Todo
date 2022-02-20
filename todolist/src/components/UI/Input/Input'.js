@@ -1,5 +1,5 @@
 const Input = (props) => {
-    return <input  type={props.type} placeholder="Enter todo Item" />
+    return <input onChange={props.onChange} value={props.value} type={props.type} placeholder="Enter todo Item" />
 }
 
 

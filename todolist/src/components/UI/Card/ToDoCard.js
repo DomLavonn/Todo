@@ -5,7 +5,7 @@ import TodoButton from "../Button/TodoButton";
 const ToDoCard = (props) => {
     return <Card className={classes.cardscreen}>
             <Card.Body>
-                <Card.Subtitle className="mb-2 text-muted">{props.card.subtitle}</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">{props.card.subtitle.toTimeString()}</Card.Subtitle>
                 <Card.Text>
                     <p> {props.card.title} </p>
                 </Card.Text>
